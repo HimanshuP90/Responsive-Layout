@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Himanshu Web Design | Services</title>
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="./js/tab.js"></script>
 </head>
 <body>
 	<header>
@@ -36,23 +37,30 @@
 		<div class="container">
 		<article id="main-col">
 			<h1 class="page-title">Services</h1>
-			<ul id="services">
-				<li>
-					<h3>Website Design</h3>
-					<p>A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on at least one web server</p>
-					<p>Pricing: $1,000 - $3,000</p>
-				</li>
-				<li>
-					<h3>Website Maintenance</h3>
-					<p>Our website maintenance programs ensure that your site is always current and your project stays within budget. Our standard program includes, content updates, update images, and support via telephone and e-mail.</p>
-					<p>Pricing: $250 per month</p>
-				</li>
-				<li>
-					<h3>Website Hosting</h3>
-					<p>Web hosting is a service that allows organizations and individuals to post a website or web page onto the Internet. A web host, or web hosting service provider, is a business that provides the technologies and services needed for the website or webpage to be viewed in the Internet. </p>
-					<p>Pricing: $25 per month</p>
-				</li>
-			</ul>
+			
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'Design')">Website Design</button>
+				<button class="tablinks" onclick="openCity(event, 'Maintenance')">Website Maintenance</button>
+				<button class="tablinks" onclick="openCity(event, 'Hosting')">Website Hosting</button>
+			</div>
+
+			<div id="Design" class="tabcontent">
+				<h3>Website Design</h3>	
+				<p>A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on at least one web server</p>
+				<p>Pricing: $1,000 - $3,000</p>				
+			</div>
+
+			<div id="Maintenance" class="tabcontent">
+				<h3>Website Design</h3>	
+				<p>A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on at least one web server</p>
+				<p>Pricing: $1,000 - $3,000</p>				
+			</div>
+
+			<div id="Hosting" class="tabcontent">
+				<h3>Website Design</h3>	
+				<p>A website is a collection of related web pages, including multimedia content, typically identified with a common domain name, and published on at least one web server</p>
+				<p>Pricing: $1,000 - $3,000</p>				
+			</div>
 		</article>
 
 		<aside id="sidebar">
